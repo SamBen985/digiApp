@@ -1,0 +1,49 @@
+.container2 {
+  align-self: center;
+  margin: auto;
+  width: 80vw;
+  max-width: 350px;
+  height: 35vh;
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 100px;
+  border: 1px solid black;
+  padding: 20px;
+  box-shadow: 1px 1px 4px 0px #000;
+  box-sizing: border-box;
+}
+
+.container2 h5 {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.container2 input {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.container2 label {
+  margin-left: 0;
+  display: block;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .container2 {
+    width: 90vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .container2 h5 {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .container2 input {
+    font-size: 16px;
+  }
+}

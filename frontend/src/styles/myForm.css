@@ -1,0 +1,25 @@
+.left-input {
+  margin-right: 10px;
+  margin-bottom: 30px;
+  width: 37vw;
+  background-color: transparent;
+}
+.email {
+  width: 75vw;
+  margin-bottom: 30px;
+  background-color: transparent;
+}
+
+.right-input {
+  width: 37vw;
+  margin-bottom: 30px;
+  background-color: transparent;
+}
+
+#submit {
+  width: 100%;
+  font-weight: 600;
+  margin-top: 10px;
+  height: 6vh;
+  background-color: rgb(150, 249, 168);
+}

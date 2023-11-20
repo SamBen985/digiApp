@@ -1,0 +1,14 @@
+.vis-image {
+  width: 120px;
+}
+
+.footer {
+  position: absolute;
+  display: flex;
+  height: 80px;
+  background-color: #f6f6f6;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  text-align: center;
+}

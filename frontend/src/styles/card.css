@@ -1,0 +1,47 @@
+.container {
+  width: 1200px;
+  margin-top: 50px;
+}
+
+.left-input {
+  margin-right: 10px;
+  margin-bottom: 30px;
+  width: 37vw;
+  background-color: transparent;
+}
+
+.right-input {
+  width: 37vw;
+  margin-bottom: 30px;
+  background-color: transparent;
+}
+.title2 {
+  width: 75vw;
+  margin: auto;
+  font-family: Roboto;
+  font-weight: 600;
+}
+
+#submit {
+  width: 100%;
+  font-weight: 600;
+  margin-top: 10px;
+  height: 6vh;
+  background-color: rgb(150, 249, 168);
+}
+#year {
+  width: 18vw;
+  height: 58px;
+  border-radius: 5px;
+  text-align: center;
+}
+#month {
+  width: 18vw;
+  height: 58px;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-align: center;
+}
+select {
+  border: 1px solid rgb(214, 214, 214);
+}
