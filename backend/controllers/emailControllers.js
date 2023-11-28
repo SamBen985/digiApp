@@ -7,12 +7,12 @@ const db = require("../db.json");
 dotenv.config();
 
 let transporter = nodemailer.createTransport({
-  host: smtp.gmail.com,
+  host: process.env.SMTP_HOST,
   port: 587,
   secure: false, // true for 465, false for other ports
   auth: {
-    user: "digisolutions774@gmail.com", // generated ethereal user
-    pass: culzefagdxvlfsix, // generated ethereal password
+    user: process.env.SMTP_MAIL, // generated ethereal user
+    pass: process.env.PASSWORD, // generated ethereal password
   },
 });
 
