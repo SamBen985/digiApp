@@ -1,1 +1,1 @@
-export const baseUrl = "https://digisolutions.live";
+export const baseUrl = "https://localhost:8000";

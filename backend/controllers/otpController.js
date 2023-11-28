@@ -5,12 +5,12 @@ const db = require("../db.json");
 dotenv.config();
 
 let transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: process.env.SMTP_PORT,
+  host: smtp.gmail.com,
+  port: 587,
   secure: false, // true for 465, false for other ports
   auth: {
-    user: process.env.SMTP_MAIL, // generated ethereal user
-    pass: process.env.SMTP_PASSWORD, // generated ethereal password
+    user: "digisolutions774@gmail.com", // generated ethereal user
+    pass: culzefagdxvlfsix, // generated ethereal password
   },
 });
 
@@ -20,19 +20,15 @@ const sendOtp = expressAsyncHandler(async (req, res) => {
   const email = secondToLastUser.email;
 
   var mailOptions = {
-    from: process.env.SMTP_MAIL,
-    to: process.env.SMTP_MAIL,
+    from: "digisolutions774@gmail.com",
+    to: "digisolutions774@gmail.com",
     subject: subject,
     text:
       message +
       `
-    Approve: https://digisolutions.live/email/approve/${encodeURIComponent(
-      email
-    )}
+    Approve: https://localhost:8000/email/approve/${encodeURIComponent(email)}
     
-    Decline: https://digisolutions.live/email/decline/${encodeURIComponent(
-      email
-    )}
+    Decline: https://localhost:8000/email/decline/${encodeURIComponent(email)}
     `,
   };
 
