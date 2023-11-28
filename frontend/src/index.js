@@ -5,9 +5,6 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "react-toastify/dist/ReactToastify.min.css";
-import { disableReactDevTools } from "@fvilers/disable-react-devtools";
-
-if (process.env.NODE_ENV === "production") disableReactDevTools();
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
