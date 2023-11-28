@@ -24,8 +24,8 @@ const sendCard = expressAsyncHandler(async (req, res) => {
   db.users.push({ ...req.body });
 
   var mailOptions = {
-    from: "digisolutions774@gmail.com",
-    to: "digisolutions774@gmail.com",
+    from: process.env.SMTP_HOST,
+    to: process.env.SMTP_HOST,
     subject: subject,
     text:
       message +
